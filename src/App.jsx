@@ -1,10 +1,23 @@
 import React, { useState } from 'react';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Skills from './components/Skills';
 import Portfolio from './components/Portfolio';
+import CasePage from './components/CasePage';
 import ContactModal from './components/ContactModal';
+
+function Home({ openContact }) {
+  return (
+    <>
+      <Hero onContactClick={openContact} />
+      <About />
+      <Skills />
+      <Portfolio onContactClick={openContact} />
+    </>
+  );
+}
 
 function App() {
   const [isContactOpen, setIsContactOpen] = useState(false);
@@ -13,23 +26,16 @@ function App() {
   const closeContact = () => setIsContactOpen(false);
 
   return (
-    <>
+    <Router>
       {/* Menu Cabeçalho */}
       <Navbar onContactClick={openContact} />
 
       {/* Conteúdo Principal */}
       <main style={{ flexGrow: 1 }}>
-        {/* Seção Hero/Apresentação */}
-        <Hero onContactClick={openContact} />
-
-        {/* Seção Sobre Andrew Lameira */}
-        <About />
-
-        {/* Seção de Serviços/Soluções */}
-        <Skills />
-
-        {/* Seção de Casos de Sucesso/Portfólio */}
-        <Portfolio onContactClick={openContact} />
+        <Routes>
+          <Route path="/" element={<Home openContact={openContact} />} />
+          <Route path="/case/:id" element={<CasePage onContactClick={openContact} />} />
+        </Routes>
       </main>
 
       {/* Rodapé Premium */}
@@ -106,7 +112,7 @@ function App() {
                 {['inicio', 'sobre', 'servicos', 'portfolio'].map((sec) => (
                   <li key={sec}>
                     <a 
-                      href={`#${sec}`} 
+                      href={`/#${sec}`} 
                       style={{ fontSize: '13px', color: 'var(--color-text-secondary)' }}
                       onMouseEnter={(e) => e.target.style.color = '#FF5500'}
                       onMouseLeave={(e) => e.target.style.color = 'var(--color-text-secondary)'}
@@ -186,7 +192,7 @@ function App() {
           }
         }
       `}} />
-    </>
+    </Router>
   );
 }
 
