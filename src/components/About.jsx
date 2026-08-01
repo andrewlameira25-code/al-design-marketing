@@ -90,8 +90,9 @@ export default function About() {
           <div 
             style={{
               display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center'
+              flexDirection: 'column',
+              alignItems: 'center',
+              gap: '24px'
             }}
           >
             <div 
@@ -133,6 +134,24 @@ export default function About() {
                 <span style={{ fontSize: '11px', color: '#FF5500', fontWeight: 700, letterSpacing: '0.1em' }}>A.L. CONSULTING</span>
               </div>
             </div>
+            
+            {/* Imagem Força & Estilo */}
+            <div style={{ textAlign: 'center' }}>
+              <img 
+                src="/images/forca-estilo.jpg" 
+                alt="Logo Força e Estilo" 
+                onError={(e) => e.target.style.display = 'none'}
+                style={{
+                  maxWidth: '180px',
+                  borderRadius: '8px',
+                  boxShadow: '0 10px 20px rgba(0,0,0,0.5)',
+                  border: '1px solid rgba(255,255,255,0.05)'
+                }}
+              />
+              <p style={{ fontSize: '11px', color: 'var(--color-text-muted)', marginTop: '8px', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                O começo de tudo
+              </p>
+            </div>
           </div>
 
           {/* Lado Direito - A História da Força & Estilo */}
@@ -164,9 +183,24 @@ export default function About() {
             <h3 style={{ fontSize: '24px', color: '#FF5500', textTransform: 'uppercase', marginBottom: '16px', fontFamily: 'var(--font-headline)' }}>
               A Prova de Fogo: Academia Oficina G4
             </h3>
-            <p style={{ fontSize: '16px', color: '#FFF', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6' }}>
+            <p style={{ fontSize: '16px', color: '#FFF', maxWidth: '700px', margin: '0 auto', lineHeight: '1.6', marginBottom: '32px' }}>
               Identifiquei uma oportunidade onde outros viam fracasso: uma academia encerrando as operações, com equipamentos velhos, espaço sujo e uma carteira de 30 alunos inadimplentes. <strong>Com apenas R$ 600,00 no bolso, assumi o desafio.</strong>
             </p>
+
+            {/* Galeria de Provas (G4) */}
+            <div 
+              style={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+                gap: '16px',
+                marginBottom: '40px'
+              }}
+            >
+              <img src="/images/g4-logo.png" alt="Oficina G4 Logo" onError={(e) => e.target.style.display = 'none'} style={{ width: '100%', height: '180px', objectFit: 'contain', backgroundColor: '#FFF', borderRadius: '8px', padding: '16px' }} />
+              <img src="/images/g4-karla.jpg" alt="Karla Lameira G4" onError={(e) => e.target.style.display = 'none'} style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)' }} />
+              <img src="/images/g4-promo.jpg" alt="Flyer Promo G4" onError={(e) => e.target.style.display = 'none'} style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)' }} />
+              <img src="/images/g4-suplemento.jpg" alt="Flyer Suplemento G4" onError={(e) => e.target.style.display = 'none'} style={{ width: '100%', height: '180px', objectFit: 'cover', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)' }} />
+            </div>
           </div>
 
           <div 
