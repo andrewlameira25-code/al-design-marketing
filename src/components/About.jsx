@@ -22,7 +22,7 @@ export default function About() {
             alignItems: 'center'
           }}
         >
-          {/* Lado Esquerdo - Narrativa de Autoridade */}
+          {/* Lado Esquerdo - Narrativa de Autoridade e História Real */}
           <div style={{ textAlign: 'left' }}>
             <span 
               style={{
@@ -36,7 +36,7 @@ export default function About() {
                 marginBottom: '12px'
               }}
             >
-              Nossa Essência
+              A Jornada Real
             </span>
             <h2 
               style={{
@@ -46,7 +46,7 @@ export default function About() {
                 textTransform: 'uppercase'
               }}
             >
-              Construindo marcas de impacto que <span className="text-orange">lideram o mercado local</span>.
+              Pele em risco: Eu entendo a dor do <span className="text-orange">dono de pequeno negócio.</span>
             </h2>
             
             <div 
@@ -56,18 +56,25 @@ export default function About() {
                 gap: '20px',
                 fontSize: '16px',
                 fontWeight: 300,
-                color: 'var(--color-text-secondary)'
+                color: 'var(--color-text-secondary)',
+                lineHeight: '1.7'
               }}
             >
               <p>
-                A <strong>A.L. Design & Marketing</strong> surgiu para quebrar o padrão das estéticas amadoras e posts genéricos. Acreditamos que o marketing de um negócio local não deve ser apenas "bonitinho" — ele deve transmitir <strong>segurança, seriedade e autoridade corporativa imediata</strong>.
+                <strong>Não sou apenas um designer ou gestor de tráfego que vive de teoria.</strong>
               </p>
               <p>
-                Sob a liderança de <strong>Andrew Lameira</strong>, Diretor de Arte baseado em Belém, Pará, desenvolvemos projetos visuais com base em processos lógicos e matemáticos (Grid System). O resultado é uma comunicação limpa, onde o design atua a serviço do crescimento comercial e do fechamento de contratos de alto valor.
+                Sou um empreendedor que construiu e geriu uma academia do absoluto zero. Eu já passei noites sem dormir lidando com crises de imóvel, precisando recuperar dezenas de alunos inadimplentes no meio da pandemia e lutando para manter o fluxo de caixa saudável nos meses de baixa temporada.
+              </p>
+              <p>
+                Usando minhas próprias estratégias de branding, precificação inteligente e design publicitário de alta conversão, nós <strong>dobramos as vendas de suplementos</strong> (transformando estoque parado em lucro), trouxemos parceiros renomados da região e criamos uma verdadeira <em>tribo fiel</em>.
+              </p>
+              <p>
+                O marketing da <strong style={{ color: '#FFF' }}>A.L. Design</strong> não foi testado no laboratório, foi forjado no campo de batalha. E é exatamente essa bagagem agressiva de conversão, caixa rápido e autoridade que eu vou usar para alavancar o SEU negócio.
               </p>
             </div>
 
-            {/* Três Pilares da Identidade do PDF */}
+            {/* Três Pilares da Identidade */}
             <div 
               style={{
                 display: 'grid',
@@ -77,16 +84,16 @@ export default function About() {
               }}
             >
               <div>
-                <h4 style={{ fontSize: '16px', marginBottom: '8px', color: '#FF5500', textTransform: 'uppercase' }}>1. Autoridade Estratégica</h4>
-                <p style={{ fontSize: '14px', lineHeight: '1.5' }}>Design corporativo refinado para gerar confiança e facilitar negociações B2B premium.</p>
+                <h4 style={{ fontSize: '16px', marginBottom: '8px', color: '#FF5500', textTransform: 'uppercase' }}>1. Foco em Caixa Real</h4>
+                <p style={{ fontSize: '14px', lineHeight: '1.5' }}>Gatilhos de venda rápidos (combos, ancoragem) que injetam dinheiro logo.</p>
               </div>
               <div>
-                <h4 style={{ fontSize: '16px', marginBottom: '8px', color: '#FF5500', textTransform: 'uppercase' }}>2. Conversão Nativa</h4>
-                <p style={{ fontSize: '14px', lineHeight: '1.5' }}>Estética limpa e funcional, focada em maximizar o impacto do call-to-action.</p>
+                <h4 style={{ fontSize: '16px', marginBottom: '8px', color: '#FF5500', textTransform: 'uppercase' }}>2. Design Sem Supérfluos</h4>
+                <p style={{ fontSize: '14px', lineHeight: '1.5' }}>Hierarquia visual feita exclusivamente para gerar conversão e contato.</p>
               </div>
               <div>
-                <h4 style={{ fontSize: '16px', marginBottom: '8px', color: '#FF5500', textTransform: 'uppercase' }}>3. Precisão Técnica</h4>
-                <p style={{ fontSize: '14px', lineHeight: '1.5' }}>Proporções harmoniosas baseadas em grids visuais estruturados.</p>
+                <h4 style={{ fontSize: '16px', marginBottom: '8px', color: '#FF5500', textTransform: 'uppercase' }}>3. Efeito Ímã</h4>
+                <p style={{ fontSize: '14px', lineHeight: '1.5' }}>Marcas de alto valor que atraem parcerias estratégicas naturalmente.</p>
               </div>
             </div>
           </div>
@@ -164,7 +171,7 @@ export default function About() {
                     textTransform: 'uppercase'
                   }}
                 >
-                  CEO & Diretor de Arte
+                  CEO, Gestor & Diretor de Arte
                 </p>
               </div>
 
@@ -200,10 +207,10 @@ export default function About() {
                 }}
               >
                 <span style={{ fontSize: '11px', color: 'var(--color-text-muted)', letterSpacing: '0.05em' }}>
-                  EST. 2026
+                  EXPERIÊNCIA REAL.
                 </span>
                 <span style={{ fontSize: '11px', color: '#FF5500', fontWeight: 700, letterSpacing: '0.1em' }}>
-                  A.L. BRAND SYSTEM
+                  A.L. CONSULTING
                 </span>
               </div>
             </div>

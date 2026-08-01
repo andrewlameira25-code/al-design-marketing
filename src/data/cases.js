@@ -3,6 +3,7 @@ export const casesData = [
     id: 'academia-oficina-g4',
     title: 'ACADEMIA OFICINA G4',
     focus: 'Crescimento em Baixa Temporada, Retenção e Gestão de Crise',
+    summaryMetric: '+33% de alunos na baixa temporada',
     scenario: 'Enfrentar a sazonalidade crítica de junho/julho (férias escolares) e recuperar a inadimplência pós-pandemia, mantendo o caixa positivo e a motivação da equipe.',
     strategyTitle: '',
     strategy: [
@@ -24,6 +25,7 @@ export const casesData = [
     id: 'loja-suplementos-integrada',
     title: 'LOJA DE SUPLEMENTOS (INTEGRADA)',
     focus: 'Giro de Estoque, Engenharia de Preço e Aceleração de Caixa',
+    summaryMetric: 'De 3 para 10 vendas/mês com estratégia de combos',
     scenario: 'Produto essencial (Creatina) com baixa rotatividade (apenas 3 unidades/mês) no modelo de venda avulsa tradicional, gerando capital parado na prateleira.',
     strategyTitle: '"O Poder do Combo e Ancoragem"',
     strategy: [
@@ -45,6 +47,7 @@ export const casesData = [
     id: 'identidade-ecossistema-marca-g4',
     title: 'IDENTIDADE E ECOSSISTEMA DE MARCA (OFICINA G4)',
     focus: 'Construção de Autoridade, Atmosfera de Comunidade e Atração de Parcerias Estratégicas',
+    summaryMetric: 'Parcerias fechadas com Ulisses Boxe e Estética Virtuosa',
     scenario: 'Criar uma identidade visual para uma academia de bairro que não parecesse "amadora" ou genérica. O objetivo era construir uma marca com cara de grande, capaz de transmitir confiança imediata, unir diferentes modalidades e servir como guarda-chuva para futuros produtos e serviços.',
     strategyTitle: '"Mais que um Logo, uma Atmosfera"',
     strategy: [
@@ -68,6 +71,7 @@ export const casesData = [
     id: 'design-publicitario-alta-conversao',
     title: 'DESIGN PUBLICITÁRIO DE ALTA CONVERSÃO',
     focus: 'Criação de Peças Estratégicas, Posicionamento de Marca e Aceleração de Vendas',
+    summaryMetric: 'Peças visuais que economizam milhares em anúncios pagos',
     scenario: 'Garantir que todas as comunicações visuais da Academia G4 e de seus parceiros não fossem apenas "bonitas", mas que funcionassem como máquinas de vendas. O objetivo era transmitir a mensagem certa, no tom certo, levando o cliente à ação imediata.',
     strategyTitle: '"Design com Propósito"',
     strategy: [

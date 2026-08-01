@@ -57,7 +57,7 @@ export default function Portfolio({ onContactClick }) {
               marginBottom: '12px'
             }}
           >
-            Casos de Sucesso
+            Resultados Comprovados
           </span>
           <h2 
             style={{
@@ -67,10 +67,10 @@ export default function Portfolio({ onContactClick }) {
               textTransform: 'uppercase'
             }}
           >
-            Estratégias que geraram <span className="text-orange">resultados reais</span>
+            Nós construímos cases <span className="text-orange">de sucesso</span>
           </h2>
           <p style={{ fontSize: '16px', fontWeight: 300, color: 'var(--color-text-secondary)' }}>
-            Nossos métodos aplicados na prática. Clique em cada case para ver os detalhes da execução e resultados.
+            Nossos métodos aplicados na prática. Clientes não compram promessas, compram resultados reais.
           </p>
         </div>
 
@@ -142,19 +142,19 @@ export default function Portfolio({ onContactClick }) {
                 </div>
               </div>
 
-              {/* Infos rápidas */}
+              {/* Infos rápidas com o Resultado Reais */}
               <div style={{ padding: '24px', flexGrow: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <div>
-                  <h3 style={{ fontSize: '15px', color: '#FFF', marginBottom: '8px' }}>
-                    Foco da Estratégia
+                  <h3 style={{ fontSize: '13px', textTransform: 'uppercase', color: 'var(--color-text-secondary)', marginBottom: '12px', letterSpacing: '0.05em' }}>
+                    Resultado Comprovado:
                   </h3>
-                  <p style={{ fontSize: '14px', color: 'var(--color-text-secondary)', lineHeight: '1.5', marginBottom: '24px' }}>
-                    {project.focus}
+                  <p style={{ fontSize: '18px', fontWeight: '700', color: '#FFF', lineHeight: '1.4', marginBottom: '24px' }}>
+                    {project.summaryMetric}
                   </p>
                 </div>
                 
                 <span style={{ color: '#FF5500', fontSize: '13px', fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  Ver Case Completo <span>→</span>
+                  Ler Estudo de Caso <span>→</span>
                 </span>
               </div>
             </div>
@@ -199,7 +199,7 @@ export default function Portfolio({ onContactClick }) {
                 fontSize: '14px'
               }}
             >
-              Quero Profissionalizar Meu Negócio
+              Agendar Diagnóstico Gratuito
             </button>
           </div>
         </div>
