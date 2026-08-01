@@ -23,23 +23,24 @@ export const casesData = [
   },
   {
     id: 'loja-suplementos-integrada',
-    title: 'LOJA DE SUPLEMENTOS (INTEGRADA)',
-    focus: 'Giro de Estoque, Engenharia de Preço e Aceleração de Caixa',
-    summaryMetric: 'De 3 para 10 vendas/mês com estratégia de combos',
-    scenario: 'Produto essencial (Creatina) com baixa rotatividade (apenas 3 unidades/mês) no modelo de venda avulsa tradicional, gerando capital parado na prateleira.',
-    strategyTitle: '"O Poder do Combo e Ancoragem"',
+    title: 'OTIMIZAÇÃO DE CAIXA & MULTIPLICAÇÃO DE LUCRO',
+    focus: 'Aceleração de Giro de Estoque, Aumento de Margem Líquida e Eficiência de Capital',
+    summaryMetric: 'Dobro de faturamento e 2 giros de caixa/mês',
+    scenario: 'A operação de varejo apresentava estagnação financeira crítica. Faturamento Bruto: ~R$ 500,00 | Lucro Líquido: ~R$ 250,00. O problema: Baixo giro de estoque. O capital ficava parado na prateleira por semanas, impedindo reinvestimento e crescimento.',
+    strategyTitle: '"Giro Rápido e Ancoragem"',
     strategy: [
-      { title: 'Reengenharia de Mix', desc: 'Substituição estratégica por uma linha básica de alto giro.' },
-      { title: 'Tática de Preço Psicológico', desc: 'Oferta de Volume (Gatilho): "Leve 2 por R$ 96,00" (saindo a R$ 48,00/unidade). Ancoragem (Preço Cheio): Se o cliente quisesse apenas 1 unidade, pagava R$ 60,00.' },
-      { title: 'Foco em Liquidez', desc: 'Priorizar o giro rápido do estoque sobre a margem unitária máxima, transformando produto parado em dinheiro vivo em dias.' }
+      { title: 'Tática de Combo (Gatilho)', desc: 'Implementação da oferta "Leve 2 por R$ 96" (vs. R$ 60 unitário) na Creatina, elevando as vendas de 3 para 10+ unidades/mês.' },
+      { title: 'Foco em Liquidez', desc: 'Priorizamos vender rápido para trazer dinheiro ao caixa imediatamente, permitindo recompra imediata de estoque.' },
+      { title: 'Venda Cruzada', desc: 'O fluxo maior de clientes atraídos pelas promoções comprou outros itens de margem maior.' }
     ],
+    resultsTitle: 'Os Resultados Reais (Métricas Financeiras)',
+    resultsDesc: 'Em um único ciclo mensal, transformamos a saúde financeira da loja:',
     results: [
-      { title: 'Explosão de Volume', desc: 'Vendas pularam de 3 unidades/mês para 10+ unidades/mês (+233% de crescimento).' },
-      { title: 'Caixa Imediato', desc: 'O dinheiro que ficaria preso por meses entrou no caixa semanalmente.' },
-      { title: 'Venda Cruzada Automática', desc: 'Quem ia buscar o combo de creatina (oferta isca) acabava levando Whey ou outros itens, alavancando o lucro total da loja.' },
-      { title: 'Satisfação do Cliente', desc: 'Percepção de "negócio imperdível" ao levar o combo, fidelizando pela economia percebida.' }
+      { title: 'Faturamento Bruto', desc: 'De R$ 500,00 para R$ 1.000,00 (+100% de crescimento).' },
+      { title: 'Lucro Líquido', desc: 'De R$ 250,00 para R$ 400,00 (+60% de aumento no lucro real no bolso).' },
+      { title: '2 Giros de Caixa Completos', desc: 'O capital investido foi recuperado e reinvestido duas vezes no mesmo mês. Isso multiplicou o poder de compra e venda sem injeção de dinheiro externo.' }
     ],
-    lesson: '"No varejo, giro é rei. Às vezes, vender mais volume com margem ajustada gera muito mais lucro final do que ter estoque parado com margem alta. A âncora de preço (R$ 60 vs R$ 48 no combo) é a chave para destravar vendas."',
+    lesson: '"Não basta vender mais; é preciso vender mais rápido. Ao dobrar o faturamento e garantir 2 giros de caixa mensais, provamos que a eficiência do capital é tão importante quanto a margem de lucro. Transformamos R$ 500 de movimento lento em R$ 1.000 de movimento rápido, gerando 60% mais lucro líquido com a mesma estrutura."',
     badge: 'Varejo & Caixa',
     gridPattern: false
   },
