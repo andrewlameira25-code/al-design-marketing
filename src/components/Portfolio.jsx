@@ -5,35 +5,18 @@ import { casesData, portfolioServices } from '../data/cases';
 export default function Portfolio({ onContactClick }) {
   const navigate = useNavigate();
 
-  // Função para renderizar tipografia de logomarcas personalizadas como prova social
   const renderCardLogo = (project) => {
     if (project.id === 'academia-oficina-g4' || project.id === 'identidade-ecossistema-marca-g4') {
       return (
-        <div style={{ zIndex: 2, textAlign: 'center', padding: '24px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <span style={{ fontSize: '11px', color: '#FF5500', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.1em', display: 'block', marginBottom: '8px' }}>
-            {project.badge}
-          </span>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: 0.9 }}>
-            <span style={{ fontSize: '28px', fontWeight: 900, color: '#FFF', letterSpacing: '4px', fontFamily: 'Arial, sans-serif' }}>OFICINA</span>
-            <span style={{ fontSize: '64px', fontWeight: 900, color: '#FF5500', fontFamily: 'Arial, sans-serif', WebkitTextStroke: '1px rgba(255,255,255,0.05)' }}>G4</span>
-          </div>
+        <div style={{ zIndex: 2, textAlign: 'center', padding: '16px', display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%', justifyContent: 'center', width: '100%' }}>
+          <img src="/images/g4-logo.png" alt="Oficina G4" style={{ maxWidth: '80%', maxHeight: '120px', objectFit: 'contain', filter: 'drop-shadow(0 10px 10px rgba(0,0,0,0.8))' }} />
         </div>
       );
     }
     if (project.id === 'loja-suplementos-integrada') {
       return (
-        <div style={{ zIndex: 2, textAlign: 'center', padding: '24px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <span style={{ fontSize: '11px', color: '#FF5500', textTransform: 'uppercase', fontWeight: 700, letterSpacing: '0.1em', display: 'block', marginBottom: '16px' }}>
-            {project.badge}
-          </span>
-          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', lineHeight: 1.1 }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <span style={{ fontSize: '24px', fontWeight: 900, color: '#00E676', fontFamily: 'Arial, sans-serif' }}>FORÇA</span>
-              <span style={{ fontSize: '16px', color: '#FFF', fontWeight: 300 }}>E</span>
-              <span style={{ fontSize: '24px', fontWeight: 900, color: '#FFF', fontFamily: 'Arial, sans-serif' }}>ESTILO</span>
-            </div>
-            <span style={{ fontSize: '10px', fontWeight: 700, color: '#FFF', letterSpacing: '4px', opacity: 0.7, marginTop: '4px' }}>SUPLEMENTAÇÃO</span>
-          </div>
+        <div style={{ zIndex: 2, textAlign: 'center', padding: '16px', display: 'flex', flexDirection: 'column', alignItems: 'center', height: '100%', justifyContent: 'center', width: '100%' }}>
+          <img src="/images/forca-estilo.png" alt="Força e Estilo" style={{ maxWidth: '80%', maxHeight: '120px', objectFit: 'contain', filter: 'drop-shadow(0 10px 10px rgba(0,0,0,0.8))' }} />
         </div>
       );
     }

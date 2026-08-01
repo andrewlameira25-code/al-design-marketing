@@ -138,7 +138,7 @@ export default function About() {
             {/* Imagem Força & Estilo */}
             <div style={{ textAlign: 'center' }}>
               <img 
-                src="/images/forca-estilo.jpg" 
+                src="/images/forca-estilo.png" 
                 alt="Logo Força e Estilo" 
                 onError={(e) => e.target.style.display = 'none'}
                 style={{
