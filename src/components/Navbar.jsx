@@ -51,12 +51,13 @@ export default function Navbar({ onContactClick }) {
       >
         {/* LOGO - Primary Horizontal Lockup baseada no PDF */}
         <a 
-          href="#inicio" 
+          href="/#inicio" 
           style={{
             display: 'flex',
             alignItems: 'center',
             gap: '12px',
-            userSelect: 'none'
+            userSelect: 'none',
+            textDecoration: 'none'
           }}
         >
           {/* Monograma AL de Apoio */}
@@ -118,7 +119,7 @@ export default function Navbar({ onContactClick }) {
           {['inicio', 'sobre', 'servicos', 'portfolio'].map((section) => (
             <a 
               key={section} 
-              href={`#${section}`}
+              href={`/#${section}`}
               style={{
                 fontFamily: 'var(--font-headline)',
                 fontWeight: 500,
@@ -126,7 +127,8 @@ export default function Navbar({ onContactClick }) {
                 textTransform: 'uppercase',
                 letterSpacing: '0.05em',
                 color: 'var(--color-text-secondary)',
-                transition: 'color 0.2s'
+                transition: 'color 0.2s',
+                textDecoration: 'none'
               }}
               onMouseEnter={(e) => e.target.style.color = '#FFFFFF'}
               onMouseLeave={(e) => e.target.style.color = 'var(--color-text-secondary)'}
@@ -189,7 +191,7 @@ export default function Navbar({ onContactClick }) {
         {['inicio', 'sobre', 'servicos', 'portfolio'].map((section) => (
           <a 
             key={section} 
-            href={`#${section}`}
+            href={`/#${section}`}
             onClick={() => setIsMobileMenuOpen(false)}
             style={{
               fontFamily: 'var(--font-headline)',
@@ -197,7 +199,8 @@ export default function Navbar({ onContactClick }) {
               fontSize: '22px',
               textTransform: 'uppercase',
               letterSpacing: '0.05em',
-              color: '#FFFFFF'
+              color: '#FFFFFF',
+              textDecoration: 'none'
             }}
           >
             {section === 'inicio' ? 'Início' : section === 'sobre' ? 'Sobre' : section === 'servicos' ? 'Serviços' : 'Portfólio'}
